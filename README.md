@@ -1,6 +1,8 @@
 # cpr
 Color Performance Review Tool for Endoscopy Devices
+
 WCC, 1/4/2023 Prepare for Eshan for the InfoClear review
+
 Prepare for Eshan for the InfoClear review
 
 ## How to run
