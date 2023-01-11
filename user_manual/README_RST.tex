@@ -70,7 +70,7 @@ The tool provides the following analyses:
 
 \begin{par}
 \begin{flushleft}
-The input data should include the measured CIEXYZ values of the 24-patch \href{https://www.xrite.com/categories/calibration-profiling/colorchecker-classic-family/colorchecker-classic-nano}{ColorChecker} for the test target and the subject device. The input files are text files in the comma-separated value (CSV) format. Each input file contains 25 rows of the CIE X, Y, and Z values separated by commas. Lines \#1\textasciitilde{}\#24 describe the 24 color patches, and Line \#25 describes the reference white. Follow the patch order defined by the ColorChecker.
+The input data should include the measured CIEXYZ values of the 24-patch \href{https://www.xrite.com/categories/calibration-profiling/colorchecker-classic-family/colorchecker-classic-nano}{ColorChecker} for the test target and the endoscopy device. The input files are text files in the comma-separated value (CSV) format. Each input file contains 25 rows of the CIE X, Y, and Z values separated by commas. Lines \#1\textasciitilde{}\#24 describe the 24 color patches, and Line \#25 describes the reference white. Follow the patch order defined by the ColorChecker.
 \end{flushleft}
 \end{par}
 
@@ -139,7 +139,7 @@ XYZ_Subject = csvread(XYZ_Subject_filename);
 
 \begin{par}
 \begin{flushleft}
-The input data are combined into \texttt{CIEXYZ\_Data} as a 25x6 table for inspection:
+The input data for the ground truth (\texttt{Ref\_X}, \texttt{Ref\_Y}, and \texttt{Ref\_Z}) and endoscopy device (\texttt{Sub\_X}, \texttt{Sub\_Y}, and \texttt{Sub\_Z}) are combined into \texttt{CIEXYZ\_Data} as a 25x6 table for inspection:
 \end{flushleft}
 \end{par}
 
@@ -274,7 +274,7 @@ if strcmp(cpr.devDataOriginal.source,'XYZ')
 end
 \end{matlabcode}
 \begin{center}
-\includegraphics[width=\maxwidth{56.196688409433015em}]{figure_0.png}
+\includegraphics[width=\maxwidth{67.83743100852986em}]{figure_0.png}
 \end{center}
 
 \begin{par}
@@ -344,7 +344,7 @@ cpr.check_endoscopic_scene(simulate_filename);
 
 \begin{par}
 \begin{flushleft}
-The left chart shows the per-patch color difference between the subject device and the ground truth. The right chart shows the boxplot. Statistics (mean, std, min, median, and max) are provided in the titles.
+The left chart shows the per-patch color difference between the endoscopy device and the ground truth. The right chart shows the boxplot. Statistics (mean, std, min, median, and max) are provided in the titles.
 \end{flushleft}
 \end{par}
 
@@ -378,7 +378,7 @@ The following charts show the patch order in lightness, chroma, and hue (1D view
 cpr.check_order
 \end{matlabcode}
 \begin{center}
-\includegraphics[width=\maxwidth{113.09583542398394em}]{figure_4.png}
+\includegraphics[width=\maxwidth{67.53637732062218em}]{figure_4.png}
 \end{center}
 
 \begin{par}
@@ -400,6 +400,9 @@ The following charts show the patch order in lightness, chroma, and hue (2D view
 \begin{matlabcode}
 cpr.check_linearity
 \end{matlabcode}
+\begin{matlaboutput}
+Warning: Exported image displays axes toolbar. To remove axes toolbar from image, export again.
+\end{matlaboutput}
 \begin{center}
 \includegraphics[width=\maxwidth{83.69292523833417em}]{figure_5.png}
 \end{center}
@@ -424,7 +427,7 @@ The following charts show the color transfer from the ground truth (spheres) to 
 cpr.check_color_transfer
 \end{matlabcode}
 \begin{center}
-\includegraphics[width=\maxwidth{71.45007526342198em}]{figure_6.png}
+\includegraphics[width=\maxwidth{76.36728549924737em}]{figure_6.png}
 \end{center}
 
 \begin{par}
@@ -457,7 +460,7 @@ where $i$ and $j$ are patch numbers $1\le i\le 24,1\le j\le 24,i\not= j$. $ref(i
 
 \begin{par}
 \begin{flushleft}
-$CCE=1$ (represented by the dotted red line) means that the device reproduces the color contrast perfectly. $CCE>1$ means that the device enhances the color contrast.
+$CCE=1$ (represented by the dotted red line) means that the device reproduces the color contrast perfectly. $CCE>1$ means that the device enhances the color contrast, while $CCE<1$ means otherwise.
 \end{flushleft}
 \end{par}
 
