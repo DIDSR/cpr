@@ -107,7 +107,7 @@ The following charts show the patch order in lightness, chroma, and hue (1D view
 #### 3.3.2 Order in lightness, chroma, and hue - 2D view
 The following charts show the patch order in lightness, chroma, and hue (2D view). Use these charts to identify any out-of-order patches and assess linearity, concordance, and monotonicity.
  
-![lch_2d](https://user-images.githubusercontent.com/45103074/212100918-f8b7dc53-a073-4d27-b737-a16697fb3381.png)
+![lch_2d](https://user-images.githubusercontent.com/83293961/212143027-9806a738-cd9e-4531-972f-82cf02d09031.png)
 *Figure 3.3.2: Preservation of the patch order in lightness/hue/chroma -- linearity. The top two charts show the patch order in lightness for gray patches (#19-#24) and chromatic patches (#1-#18). The lower left chart shows the chromatic patches in the hue order, and the lower right in the chroma order. Linear regression coefficients are included in each plot.*
 
 #### 3.3.3 Three-dimensional color transfer
@@ -116,7 +116,7 @@ The following charts show the color transfer from the ground truth (spheres) to 
 ![labx6](https://user-images.githubusercontent.com/45103074/212100782-49a22622-ca5a-44ee-8185-e7ab3ed1088c.png)
 *Figure 3.3.3: Visualization of color transfer. The top four charts show the color transfer of the chromatic patches observed from different angles. The bottom two charts show the color transfer of the gray patches to observe their lightness and chromaticity.*
 
-### 3.4 Preservation of Color Contrast between Patches
+### 3.4 Preservation of color contrast between patches
 The following charts show all datapoints plotted according to their ground truth and device output. The color contrast enhancement (CCE) is defined as follows:
 
 ![CCE_eq](https://user-images.githubusercontent.com/45103074/212115014-c9581a94-ea4c-493a-8397-644011e11c07.png)
