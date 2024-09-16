@@ -1,7 +1,7 @@
 # Color Performance Review Tool for Endoscopy Devices
 
 ## 0. Video demo
-[![Watch the video](https://github.com/user-attachments/assets/e24de16f-4573-432a-b7d4-da48e63d5b6f)](https://weichungcheng.github.io/cpr/cpr_video.mp4)
+[![Watch the video](https://github.com/user-attachments/assets/e24de16f-4573-432a-b7d4-da48e63d5b6f)](https://didsr.github.io/cpr/install%20CPR%20tool%20video%20instruction.mp4)
 
 ## 1. Introduction
 The Color Performance Review (CPR) Tool for Endoscopy Devices is a software program written in Matlab for analyzing color performance testing data in endoscopy device. The tool accepts the testing data and then generates quantitative analyses for the user to compare color performance between devices. The input testing data include the measurement data of a standard test target from the device output as well as the ground truth of the test target. 
