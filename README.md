@@ -128,3 +128,14 @@ where *i* and *j* are patch numbers. *ref(i)* and *sub(i)* are reference and sub
 
 ![ccex3](https://user-images.githubusercontent.com/45103074/212100537-126d011c-7825-42b7-9a19-ed7474b0c606.png)
 *Figure 3.4: Preservation of color contrast between patches. The CCE values calculated based on the ΔE<sub>00</sub>, ΔE<sub>94</sub> , or ΔE<sub>76</sub> formulas. Each colored cross represents a patch-pair where the horizontal and vertical bars are colored separately according to the patch-pair. The percentage indicates patch-pairs that have CCE>1.*
+
+## Disclaimer
+About the Catalog of Regulatory Science Tools
+The enclosed tool is part of the [Catalog of Regulatory Science Tools](https://cdrh-rst.fda.gov/), which provides a peer-reviewed resource for stakeholders to use where standards and qualified Medical Device Development Tools (MDDTs) do not yet exist. These tools do not replace FDA-recognized standards or MDDTs. This catalog collates a variety of regulatory science tools that the FDA’s Center for Devices and Radiological Health’s (CDRH) Office of Science and Engineering Labs (OSEL) developed. These tools use the most innovative science to support medical device development and patient access to safe and effective medical devices. If you are considering using a tool from this catalog in your marketing submissions, note that these tools have not been qualified as [Medical Device Development Tools](https://www.fda.gov/medical-devices/medical-device-development-tools-mddt) and the FDA has not evaluated the suitability of these tools within any specific context of use. You may [request feedback or meetings for medical device submissions](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/requests-feedback-and-meetings-medical-device-submissions-q-submission-program) as part of the Q-Submission Program.
+
+For more information about the Catalog of Regulatory Science Tools, email RST_CDRH@fda.hhs.gov.
+
+## Tool Reference
+-	RST Reference Number: RST24MD01.01
+-	Date of Publication: 02/02/2023
+-	Recommended Citation: U.S. Food and Drug Administration. (2023). Color Performance Review Tool for Endoscopy Devices (RST24MD01.01). https://cdrh-rst.fda.gov/color-performance-review-tool-endoscopy-devices
